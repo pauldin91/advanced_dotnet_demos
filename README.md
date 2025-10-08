@@ -1,9 +1,9 @@
-# async_dotnet_demo
+## async_dotnet_demo
 
 A .NET demo project showcasing asynchronous programming (using `async` / `await`) in C#.  
 This repository is a learning / sample project to illustrate proper async patterns, best practices, and pitfalls in .NET.
 
-## Table of Contents
+### Table of Contents
 
 - [Motivation](#motivation)  
 - [Features](#features)  
@@ -15,7 +15,7 @@ This repository is a learning / sample project to illustrate proper async patter
 - [Contributing](#contributing)  
 - [License](#license)  
 
-## Motivation
+### Motivation
 
 Asynchronous programming is essential in modern applications (web, I/O, networking) to avoid blocking threads and to scale efficiently. This demo aims to:
 
@@ -24,7 +24,7 @@ Asynchronous programming is essential in modern applications (web, I/O, networki
 - Demonstrate common traps (deadlocks, forgetting `ConfigureAwait`, etc.)  
 - Provide reference examples you can reuse  
 
-## Features
+### Features
 
 - Simple APIs demonstrating asynchronous operations  
 - I/O-bound demo (e.g. HTTP calls, file access)  
@@ -32,16 +32,16 @@ Asynchronous programming is essential in modern applications (web, I/O, networki
 - Demo of combining tasks, awaiting multiple tasks, etc.  
 - (Optional) Benchmarks or comparisons between synchronous vs asynchronous  
 
-## Getting Started
+### Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 - [.NET SDK 8.0+] or whichever version the project targets  
 - Basic familiarity with C#, .NET, `async` / `await`  
 
-### Clone & Build
+#### Clone & Build
 
 ```bash
-git clone https://github.com/pauldin91/async_dotnet_demo.git
-cd async_dotnet_demo
+git clone https://github.com/pauldin91/advanced_dotnet_demos.git
+cd advanced_dotnet_demos
 dotnet build
