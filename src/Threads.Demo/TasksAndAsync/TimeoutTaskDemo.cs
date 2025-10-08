@@ -2,17 +2,16 @@ namespace Threads.Demo.TasksAndAsync;
 
 public class TimeoutTaskDemo(int timeout)
 {
-    private readonly CancellationTokenSource _cts= new(timeout);
+    private readonly CancellationTokenSource _cts = new(timeout);
 
     public async Task<HeavyProcessResult> HeavyProcessThatCanHangAsync()
     {
-        return await HeavyProcessAsync(_cts.Token);
+        return await HeavyProcessAsync();
     }
 
-    private async Task<HeavyProcessResult> HeavyProcessAsync(CancellationToken token)
+    private async Task<HeavyProcessResult> HeavyProcessAsync()
     {
-        await Task.Delay(TimeSpan.FromMilliseconds(timeout * 2),_cts.Token);
-        return new HeavyProcessResult{Result= "Success"};
+        await Task.Delay(TimeSpan.FromMilliseconds(timeout * 2), _cts.Token);
+        return new HeavyProcessResult { Result = "Success" };
     }
-
 }
