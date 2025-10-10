@@ -1,4 +1,4 @@
-namespace GenericsRegistration.Demo.Tests.Entities;
+namespace GenericsRegistration.Demo.Tests.Database.Entities;
 
 public class EntityTwo
 {

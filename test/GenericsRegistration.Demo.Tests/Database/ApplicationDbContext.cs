@@ -1,7 +1,7 @@
-using GenericsRegistration.Demo.Tests.Entities;
+using GenericsRegistration.Demo.Tests.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericsRegistration.Demo.Tests;
+namespace GenericsRegistration.Demo.Tests.Database;
 
 public class ApplicationDbContext : DbContext
 {
@@ -9,7 +9,7 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public ApplicationDbContext(DbContextOptions options) : base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
     }
 
